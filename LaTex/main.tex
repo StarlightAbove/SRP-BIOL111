@@ -1,0 +1,253 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{pgfplots}
+\usepackage{pdfpages}
+\pgfplotsset{compat=1.14}
+
+\title{Effect of pH on phytoplankton growth}
+\author{Eliza Kishan - 261211296 \\ Eloise Barriault - ********* \\ Clare Moore - *********}
+\date{BIOL 111 SRP - McGill University}
+
+
+\begin{document}
+\maketitle
+\section*{SRP Procedure}
+\subsection*{Materials}
+\begin{enumerate}
+    \item Phytoplankton culture
+    \item Acetic acid solution (0.1M)
+    \item Baking soda solution (used sodium bicarbonate, 0.1M)
+    \item Ethanol (95\%)
+    \item Distilled water
+    \item 6 plastic cups
+    \item Vernier Spectral Analysis 
+    \item Graduated cylinder
+    \item Pipettes
+    \item pH strips
+    \item Labelling tape and a sharpie
+    \item Funnels
+    \item Glass filters
+    \item Cuvettes
+    \item Paper towel
+    \item Vacuum hand pump
+    \item Waste container
+\end{enumerate}
+
+\subsection*{Preparation of Phytoplankton in Test Tubes}
+\begin{enumerate}
+\item Stir the phytoplankton container thoroughly so that homogeneity is ensured.
+\item Using a syringe, extract a sample of 5mL from the culture.
+\item Extract and dispense equal volumes of phytoplankton culture into each test tube.
+\item Swirl (gently) the contents of each test tube.
+\end{enumerate}
+\subsection*{Preparation of pH solutions}
+\begin{enumerate}
+\item Label six clean plastic cups as pH 5, 5.5, 6, 6.5, 7.5, 8.
+\item Measure 10 mL of distilled water into each cup using a graduated cylinder.
+\item For the acidic solutions, add acetic acid using a pipette and mix thoroughly.
+\item Measure the pH solution using a pH strip.
+\item Carefully add drops until the pH has been reached.
+\item For the basic solutions, add a baking soda solution with a pipette and mix thoroughly.
+\item Measure the pH solution using a pH strip.
+\item Carefully add drops until the pH has been reached.
+\item Record in a sheet the volume of acetic acid and baking soda solution that was required to reach the desired pH. 
+\item Add 3.0 mL of ethanol to each of the pH solutions.
+\item Mix thoroughly.
+\item Place the plastic cups labelled by pH aside.
+\item Confirm the pHs of each solution one more time using a pH strip for accuracy.
+\item Cover the plastic cups with paper towels.
+\end{enumerate}
+\subsection*{Mixing of pH Solutions with Phytoplankton Culture}
+\begin{enumerate}
+\item Using a pipette, measure out 5 mL of distilled water into 6 test tubes of phytoplankton, with equal volumes of distilled water for each one.
+\item These test tubes will be the “control” test tubes, with a pH of 7 (as it is distilled water).
+\item Using a pipette, measure out 5 mL of pH solution into 3 test tubes of phytoplankton, with equal volumes of pH solution for each one.
+\item Repeat steps 14 and 15 for each pH solution. There should be 24 test tubes, including the control solution test tubes.
+\item Gently swirl each test tube to ensure that the contents are combined. 
+\item Let the test tubes sit in indirect sunlight for 6 days.
+\end{enumerate}
+\subsection*{Chlorophyll Extraction using Vacuum Hand Pump}
+\begin{enumerate}
+\item Attach a funnel to a vacuum hand pump.
+\item Attach a flask under the funnel. This will collect the waste solution.
+\item Insert a round filter paper in the funnel.
+\item Transfer the content of an entire test tube into the funnel.
+\item To ensure all of the contents have been added, rinse the test tube 1-2 times with ethanol and pour the contents into the funnel. 
+\item Pump the vacuum hand pump and extract the green solution through the filter.
+\item Remove the filter paper from the funnel.
+\item Place it into its corresponding test tube.
+\item Add 11 mL of ethanol into the test tube.
+\item Repeat steps 4-9 for every test tube.
+\item After adding all the test tubes into a test tube rack, let them sit undisturbed in a refrigerator for at least one day. This will allow the chlorophyll to be completely extracted.
+\end{enumerate}
+\subsection*{Blank Analysis}
+\begin{enumerate}
+\item Gather the plastic cups containing the 6 pH solutions (5, 5.5, 6, 6.5, 7.5, 8) and distilled water (pH of 7).
+\item Using a pipette, from a cup add solution to a cuvette until it is 2/3 full of solution.
+\item Using the Vernier spectral analysis, analyse this cuvette in order to find the baseline absorbance values for each pH value. 
+\item Repeat steps 2-3 for each plastic cup of differing pH solutions and the distilled water.
+\item Record the data.
+\end{enumerate}
+\subsection*{Final Measurement of Chlorophyll}
+\begin{enumerate}
+    \item Calibrate the Vernier spectral analysis with 95\% ethanol. 
+    \item This will be the baseline before the samples of chlorophyll are measured.
+    \item Take a test tube and invert it several times. 
+    \item Using a syringe, extract the chlorophyll solution. 
+    \item Position the syringe over a cuvette and dispense the solution into the cuvette until it is 2/3 full.
+    \item Dispose of the remaining solution.
+    \item Measure the absorbance of the chlorophyll extract.
+    \item Record the values into a notebook.
+    \item Repeat steps 3-8 for each test tube. 
+\end{enumerate}
+\subsection*{Data Processing + Analysis}
+\begin{enumerate}
+    \item Using an excel sheet, enter the absorbance values for each test tube.
+    \item Determine error bars.
+    \item Using a bar graph, plot the relationship between pH and absorbance.
+\end{enumerate}
+\newpage
+\section*{Graphs}
+\subsection*{Acid Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{acid.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{Control Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{controls.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{5 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{fiveph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{5.5 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{fivefiveph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{6 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{sixph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{6.5 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{sixfiveph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{7 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{sevenph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{7.5 pH Solution Spectroscopy Curves}
+\begin{figure}[h]
+    \begin{center}
+        \input{sevenfiveph.pgf}
+    \end{center}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\newpage
+
+\subsection*{8 pH Solution Spectroscopy Curves}
+\begin{center}
+\begin{figure}[h]
+        \input{eightph.pgf}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\end{center}
+\newpage
+
+\subsection*{390nm absorbance in chlorophyll}
+\begin{center}
+\begin{figure}[h]
+        \input{bar390.pgf}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\end{center}
+\newpage
+
+\subsection*{660nm absorbance in chlorophyll}
+\begin{center}
+\begin{figure}[h]
+        \input{bar660.pgf}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\end{center}
+\newpage
+
+\subsection*{Averages of absorbance in chlorophyll}
+\begin{center}
+\begin{figure}[h]
+        \input{avgs.pgf}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\end{center}
+\newpage
+
+\subsection*{Averages of concentration of chlorophyll}
+\begin{center}
+\begin{figure}[h]
+        \input{chloro.pgf}
+    \caption{A PGF histogram from \texttt{matplotlib}.}
+\end{figure}
+\end{center}
+\newpage
+
+\section*{Appendix}
+This contains all datasets presented in a tabular format. \\
+\textbf{Appendix 1 - Acid Spectroscopy Curves} \\
+\textbf{Appendix 2 - Control Solution Spectroscopy Curves} \\
+\textbf{Appendix 3 - 5 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 4 - 5.5 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 5 - 6 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 6 - 6.5 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 7 - 7 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 8 - 7.5 pH Solution Spectroscopy Curves} \\
+\textbf{Appendix 9 - 8 pH Solution Spectroscopy Curves} \\
+\includepdf[pages=-]{acidtable.pdf}
+\includepdf[pages=-]{controlstable.pdf}
+\includepdf[pages=-]{5pH.pdf}
+\includepdf[pages=-]{55pH.pdf}
+\includepdf[pages=-]{6pH.pdf}
+\includepdf[pages=-]{65pH.pdf}
+\includepdf[pages=-]{7pH.pdf}
+\includepdf[pages=-]{75pH.pdf}
+\includepdf[pages=-]{8pH.pdf}
+\newpage
+
+\end{document}
